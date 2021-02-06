@@ -1,0 +1,39 @@
+
+    <a href="#" class="btn btn-success mb-2 " routerLink="/client" ><i class="fa fa-plus"></i> Add New Client</a>
+      <div class="right">
+       <h2 class="right">  Total : <strong>{{ this.total() | currency: 'EUR' }}</strong> </h2>
+      </div>
+
+      <div class="form-group">
+        <label for="serche">Search</label>
+        <input #query (keyup)="search(query.value)" type="search" class="form-control" name="search" placeholder="search ...." id="serche">
+      </div>
+<table class="table table-dark">
+  <thead >
+    <th >Name</th>
+    <th >Email</th>
+    <th >Phone</th>
+    <th >Address</th>
+    <th >Contry</th>
+    <th >price</th>
+    <th ></th>
+  </thead>
+  <tbody>
+
+   <tr *ngFor= "let serch of serch  ">
+      <td>{{ serch.FisrtName }} {{ serch.LastName }}</td>
+      <td>{{ serch.Email }}</td>
+      <td>{{ serch.Phone }}</td>
+      <td>{{ serch.Address }}</td>
+      <td>{{ serch.Country }}</td>
+      <td>{{ serch.Prix | currency:"EUR":"symbol" }}</td>
+      <td>
+         <a href="#" routerLink="/serch/edit/{{ serch.id }}"><i    class="fa fa-pencil btn btn-warning "></i></a>
+         <a href="#" routerLink="/serch/{{  serch.id }}"><i class="fa fa-info-circle btn btn-primary ml-2 "></i></a>
+
+      </td>
+
+     </tr>
+
+  </tbody>
+</table>

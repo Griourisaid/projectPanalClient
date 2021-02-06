@@ -1,0 +1,40 @@
+<div class="row ">
+  <div class="col-md-6">
+      <a routerLink="/" > <i class="fa fa-arrow-circle-left" aria-hidden="true"> GO TO dahsbord</i></a>
+  </div>
+
+  <div class="col-md-6 text-right mb-2">
+       <a  href="#" class="btn btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+       <a  class="btn btn-danger ml-2" (click) = "delete(id)"><i class="fa fa-trash"></i> delete</a>
+  </div>
+</div>
+
+<div class="card">
+
+  <div class="card-body">
+      <h4 class="card-title"></h4>
+     <div class="row">
+
+         <div class="col-md-8">
+          {{ id }}
+            <ul class="list-group">
+              <li class="list-group-item"> Name : <strong>{{ client.FisrtName }}  {{ client.LastName }} </strong> </li>
+                <li class="list-group-item"> Email :<strong>{{ client.Email }}</strong> </li>
+                <li class="list-group-item"> Phone : <strong>{{ client.Phone }}</strong> </li>
+                <li class="list-group-item"> Address :<strong>{{ client.Address }}</strong> </li>
+            </ul>
+         </div>
+
+         <div class="col-md-4 text-right">
+            Prix : {{ client.Prix }}
+            <i class="fa fa-pencil btn btn-success"></i>
+            <h2></h2>
+         </div>
+
+     </div>
+  </div>
+</div>
+
+
+
+

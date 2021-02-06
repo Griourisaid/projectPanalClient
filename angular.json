@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "C:/Users/Master/Desktop/panalClients/panal/node_modules/bootstrap/dist/css/bootstrap.min.css",
+             "C:/Users/Master/Desktop/panalClients/panal/node_modules/font-awesome/css/font-awesome.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/Users/Master/Desktop/panalClients/panal/node_modules/jquery/dist/jquery.min.js",
+
+              "C:/Users/Master/Desktop/panalClients/panal/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "C:/Users/Master/Desktop/panalClients/panal/node_modules/popper.js/dist/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "panal"
+  "defaultProject": "panal",
+  "cli": {
+    "analytics": false
+  }
 }
